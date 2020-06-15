@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For high-resolution images, many mobile devices and personal computers cannot stylize them due to memory limitations. To solve this problem, we proposed a novel method named block shuffle, which can stylize high-resolution images with limited memory. In our experiments, we used [Logan Engstrom's implementation of Fast Style Transfer](https://github.com/lengstrom/fast-style-transfer) as the baseline. In this repository, we provided the source code and 16 trained models.
+For high-resolution images, most mobile devices and personal computers cannot stylize them due to memory limitations. To solve this problem, we proposed a novel method named block shuffle, which can stylize high-resolution images with limited memory. In our experiments, we used [Logan Engstrom's implementation of Fast Style Transfer](https://github.com/lengstrom/fast-style-transfer) as the baseline. In this repository, we provided the source code and 16 trained models.
 
 ### Requirements
 
@@ -22,7 +22,7 @@ For high-resolution images, many mobile devices and personal computers cannot st
 
 ### Baseline
 
-Use `baseline.py` to stylize a high-resolution image. A GPU with 11GB memory can stylize up to 4000\*4000 images (if your GPU doesn't have enough memory, it will throw an OOM error). Example usage:
+Use `baseline.py` to stylize a high-resolution image. A GPU with 12GB memory can stylize up to 4000\*4000 images (if your GPU doesn't have enough memory, it will throw an OOM error). Example usage:
 
 ```sh
 python baseline.py --input examples/content/xxx.jpg \
