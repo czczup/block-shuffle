@@ -22,7 +22,7 @@ For high-resolution images, most mobile devices and personal computers cannot st
 
 ### Baseline
 
-Use `baseline.py` to stylize a high-resolution image. A GPU with 11GB memory can stylize up to 4000\*4000 images (if your GPU doesn't have enough memory, it will throw an OOM error). Example usage:
+Use `baseline.py` to stylize a high-resolution image. A GPU with 12GB memory can stylize up to 4000\*4000 images (if your GPU doesn't have enough memory, it will throw an OOM error). Example usage:
 
 ```sh
 python baseline.py --input examples/content/xxx.jpg \
