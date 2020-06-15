@@ -65,7 +65,7 @@ We provided 16 trained fast style transfer models. If you want to train a new mo
 You can run `setup.sh` to download the COCO2014 dataset and the pre-trained VGG-19. Or you can download them from the following link (place them in `data/`):
 
 1. [COCO2014 dataset](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)
-2. pre-trained VGG-19](http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat)
+2. [pre-trained VGG-19](http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat)
 
 ### Train
 
