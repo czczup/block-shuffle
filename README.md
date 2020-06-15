@@ -14,10 +14,10 @@ For high-resolution images, many mobile devices and personal computers cannot st
 
 ### Trained Fast Style Transfer Models
 
-| [#01](models/01)                | [#02](models/02)                | [#03](models/03)                | [#04](models/04)                | [#05](models/05)                | [#06](models/06)                | [#07](models/07)                | [#08](models/08)                |
-| ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- |
+|        [#01](models/01)         |        [#02](models/02)         |        [#03](models/03)         |        [#04](models/04)         |        [#05](models/05)         |        [#06](models/06)         |        [#07](models/07)         |        [#08](models/08)         |
+| :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: |
 | ![style](examples/style/01.jpg) | ![style](examples/style/02.jpg) | ![style](examples/style/03.jpg) | ![style](examples/style/04.jpg) | ![style](examples/style/05.jpg) | ![style](examples/style/06.jpg) | ![style](examples/style/07.jpg) | ![style](examples/style/08.jpg) |
-| [#09](models/09)                | [#10](models/10)                | [#11](models/11)                | [#12](models/12)                | [#13](models/13)                | [#14](models/14)                | [#15](models/15)                | [#16](models/16)                |
+|        [#09](models/09)         |        [#10](models/10)         |        [#11](models/11)         |        [#12](models/12)         |        [#13](models/13)         |        [#14](models/14)         |        [#15](models/15)         |        [#16](models/16)         |
 | ![style](examples/style/09.jpg) | ![style](examples/style/10.jpg) | ![style](examples/style/11.jpg) | ![style](examples/style/12.jpg) | ![style](examples/style/13.jpg) | ![style](examples/style/14.jpg) | ![style](examples/style/15.jpg) | ![style](examples/style/16.jpg) |
 
 ### Baseline
@@ -65,8 +65,7 @@ We provided 16 trained fast style transfer models. If you want to train a new mo
 You can run `setup.sh` to download the COCO2014 dataset and the pre-trained VGG-19. Or you can download them from the following link (place them in `data/`):
 
 1. [COCO2014 dataset](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)
-
- 	2. [pre-trained VGG-19](http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat)
+2. pre-trained VGG-19](http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat)
 
 ### Train
 
@@ -93,7 +92,7 @@ python export.py --input checkpoint/xxx/fns.ckpt
 
 ## Some Experimental Results
 
-|             Style              |                  Content                   |                  Baseline                   |                  Baseline+Feathering                   |                  Baseline+Block Shuffle                  |
+|             Style              |                  Content                   |                  Baseline                   |                  Baseline+Feathering                   |              Baseline+Block Shuffle (Ours)               |
 | :----------------------------: | :----------------------------------------: | :-----------------------------------------: | :----------------------------------------------------: | :------------------------------------------------------: |
 | ![style](results/1/style.jpg)  | ![style](results/1/thumbnail/content.jpg)  | ![style](results/1/thumbnail/baseline.jpg)  | ![style](results/1/thumbnail/baseline+feathering.jpg)  | ![style](results/1/thumbnail/baseline+blockshuffle.jpg)  |
 | ![style](results/2/style.jpg)  | ![style](results/2/thumbnail/content.jpg)  | ![style](results/2/thumbnail/baseline.jpg)  | ![style](results/2/thumbnail/baseline+feathering.jpg)  | ![style](results/2/thumbnail/baseline+blockshuffle.jpg)  |
