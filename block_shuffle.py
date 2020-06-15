@@ -245,6 +245,5 @@ def block_shuffle(image, sess):
 if __name__ == '__main__':
     sess = load_model(args.model)
     image = cv2.imread(args.input)
-    image = cv2.resize(image, (3000, 3000))
     image = block_shuffle(image, sess)
     cv2.imwrite(args.output, image)
