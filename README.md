@@ -27,7 +27,7 @@ Use `baseline.py` to stylize a high-resolution image. A GPU with 12GB memory can
 ```sh
 python baseline.py --input examples/content/xxx.jpg \
   --output examples/result/xxx.jpg \
-  --model models/01/model.pb
+  --model models/01/model.pb \
   --gpu 0
 ```
 
@@ -38,7 +38,7 @@ Use `feathering-based.py` to stylize a high-resolution image. This method is ver
 ```sh
 python feathering-based.py --input examples/content/xxx.jpg \
   --output examples/result/xxx.jpg \
-  --model models/01/model.pb
+  --model models/01/model.pb \
   --gpu 0
 ```
 
@@ -49,8 +49,8 @@ Use `block_shuffle.py` to stylize a high-resolution image. In our experiments, w
 ```sh
 python block_shuffle.py --input examples/content/xxx.jpg \
   --output examples/result/xxx.jpg \
-  --model models/01/model.pb
-  --max-width 1000
+  --model models/01/model.pb \
+  --max-width 1000 \
   --gpu 0
 ```
 
@@ -75,7 +75,7 @@ Use `style.py` to train a new style transfer network. Training takes 26 hours on
 python style.py --style examples/style/style.jpg \
   --checkpoint-dir checkpoint/style01 \
   --test examples/content/chicago.jpg \
-  --test-dir checkpoint/style01 \
+  --test-dir checkpoint/style01
 ```
 
 ### Export
@@ -83,9 +83,9 @@ python style.py --style examples/style/style.jpg \
 Use `export.py` to export .pb files. Example usage:
 
 ```sh
-python export.py --input checkpoint/xxx/fns.ckpt 
-  --output checkpoint/xxx/models.pb
-  --gpu 0
+python export.py --input checkpoint/xxx/fns.ckpt \
+  --output checkpoint/xxx/models.pb \
+  --gpu 0 
 ```
 
 
