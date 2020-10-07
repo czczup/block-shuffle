@@ -10,6 +10,17 @@ For high-resolution images, most mobile devices and personal computers cannot st
 2. Python 3.6
 3. Python packages: tensorflow-gpu==1.9, opencv-python, numpy
 
+### Citation
+```
+@article{ma2020block,
+  title={Block Shuffle: A Method for High-resolution Fast Style Transfer with Limited Memory},
+  author={Ma, Weifeng and Chen, Zhe and Ji, Caoting},
+  journal={IEEE Access},
+  year={2020},
+  publisher={IEEE}
+}
+```
+
 ## High-resolution Image Stylization
 
 ### Trained Fast Style Transfer Models
